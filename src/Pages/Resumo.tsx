@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Resumo = () => {
+const Resumo = () => {  
   return (
     <div>Resumo</div>
   )
