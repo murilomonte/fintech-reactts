@@ -6,6 +6,7 @@ import WebhooksSVG from "../assets/icons/webhooks.svg?react";
 import ConfiguracoesSVG from "../assets/icons/configuracoes.svg?react";
 import ContatoSVG from "../assets/icons/contato.svg?react";
 import SairSVG from "../assets/icons/sair.svg?react";
+import { NavLink } from "react-router-dom";
 
 const Sidenav = () => {
   return (
@@ -16,13 +17,13 @@ const Sidenav = () => {
           <span>
             <ResumoSVG />
           </span>
-          <a href="">Resumo</a>
+          <NavLink to={"/"}>Resumo</NavLink>
         </li>
         <li>
           <span>
             <VendasSVG />
           </span>
-          <a href="">Vendas</a>
+          <NavLink to={"/vendas"}>Vendas</NavLink>
         </li>
         <li>
           <span>
