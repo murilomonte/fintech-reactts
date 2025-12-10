@@ -73,10 +73,54 @@ ul {
 }
 
 .container {
+  grid-template-columns: 240px auto;
   display: grid;
   padding: var(--gap);
   gap: var(--gap);
 }
+
+/* Sidenav */
+
+.sidenav li {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-s);
+}
+
+.sidenav li span {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-4);
+  border-radius: var(--gap);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav li a {
+  flex: 1;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: var(--color-1);
+  padding: var(--gap-s) 0;
+}
+
+.sidenav li:hover span {
+  background-color: var(--color-3);
+}
+
+
+/* danterange */
+
+.daterange {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+
+/* Resumo */
 
 .resumo {
   font-size: 1.5rem;
@@ -88,6 +132,8 @@ ul {
   margin-bottom: var(--gap);
   color: var(--color-1);
 }
+
+/* Vendas */
 
 .venda {
   display: grid;
